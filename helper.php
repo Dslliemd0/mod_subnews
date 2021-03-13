@@ -2,10 +2,19 @@
 
 defined('_JEXEC') or die;
 
+use Joomla\CMS\Factory;
+
 class ModSubNewsHelper {
 
     public static function getForm($params) {
-        return "Place for form...";
+        return $params;
+    }
+
+    public static function getEmailAjax() {
+        
+        $input = Factory::getApplication()->input;
+
+        return $input->get('email');
     }
 
 }
