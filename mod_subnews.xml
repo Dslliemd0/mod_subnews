@@ -12,4 +12,21 @@
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
     </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_subnews.ini</language>
+        <language tag="lv-LV">lv-LV/lv-LV.mod_subnews.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="email" type="email"
+                    label="MOD_SUBNEWS_PARAMS_EMAIL_LABEL"
+                    description="MOD_SUBNEWS_PARAMS_EMAIL_DESC"
+                    required="true"
+                    size="30"
+                    class="inputbox"
+                    validate="email" />
+            </fieldset>
+        </fields>
+    </config>
 </extension>
